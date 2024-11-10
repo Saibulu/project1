@@ -19,11 +19,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: blue; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
+  --background-color: grey; /* Background color for the entire website, including individual sections */
+  --default-color: white; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #0d83fd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: white; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -45,11 +45,11 @@
 }
 
 .dark-background {
-  --background-color: #0d83fd;
+  --background-color: aqua;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #409dfd;
-  --contrast-color: #ffffff;
+  --heading-color: #red;
+  --surface-color: blue;
+  --contrast-color: red;
 }
 
 /* Smooth scroll */
@@ -73,8 +73,8 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  text-decoration: greenyellow;
 }
 
 h1,
@@ -91,8 +91,8 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
-  color: #ffffff;
+  background: blueviolet;
+  color: greenyellow;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -101,8 +101,8 @@ h6 {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
-  background: #059652;
+  color: darkred;
+  background: white;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -147,7 +147,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
-  transition: all 0.5s;
+  transition: all 0.1ms;
   z-index: 997;
 }
 
@@ -159,7 +159,7 @@ h6 {
 }
 
 .scrolled .header .header-container {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: color-mix(in srgb, var(--surface-color), transparent 10%);
 }
 
 .header .logo {
@@ -615,7 +615,7 @@ h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0.5ms !important;
   }
 }
 
@@ -631,7 +631,7 @@ h6 {
 }
 
 .page-title h1 {
-  font-size: 42px;
+  font-size: 80px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -1405,7 +1405,7 @@ section,
 }
 
 .call-to-action .btn-cta {
-  background-color: color-mix(in srgb, var(--contrast-color) 15%, transparent);
+  background-color: color-mix(in srgb, var(--contrast-color) 50%, transparent);
   color: var(--contrast-color);
   padding: 12px 40px;
   border-radius: 50px;
@@ -1570,7 +1570,7 @@ section,
   width: 12px;
   height: 12px;
   opacity: 1;
-  background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
@@ -1730,7 +1730,7 @@ section,
 
 .services .service-card p {
   margin-bottom: 25px;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 15px;
   line-height: 1.6;
 }
